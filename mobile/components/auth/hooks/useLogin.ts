@@ -44,7 +44,7 @@ export const useLogin = () => {
 
         try {
             // Логика отправки данных на сервер
-            const response = await axios.post("https://aisport.kz/api/users/sign-in/", {
+            const response = await axios.post("http://localhost:8000/api/users/sign-in/", {
                 "inn": loginState.IIN.value,
                 "password": loginState.password.value
             })

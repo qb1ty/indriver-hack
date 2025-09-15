@@ -59,7 +59,7 @@ export const useFinally = (data: UnknownOutputParams) => {
         } as any)
         
         try {
-            const response = await axios.post("https://aisport.kz/api/users/sign-up/", formData, {
+            const response = await axios.post("http://localhost:8000/api/users/sign-up/", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 }

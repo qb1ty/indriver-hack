@@ -46,7 +46,7 @@ export const useCardetection = () => {
 
         try {
             const access = getToken("access")
-            await axios.post("https://aisport.kz/api/users/car-valid/", formData, {
+            await axios.post("http://localhost:8000/api/users/car-valid/", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                     "Authorization": `Bearer ${access}`

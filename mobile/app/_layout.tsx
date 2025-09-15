@@ -39,7 +39,7 @@ const RootLayout: React.FC = () => {
     const validate = async () => {
       try {
         const refresh = getToken("refresh")
-        await axios.post("https://aisport.kz/api/users/token-valid/", { refresh })
+        await axios.post("http://localhost:8000/api/users/token-valid/", { refresh })
         // router.push("/home")
       } catch (e) {
         console.log(e)
